@@ -1,0 +1,22 @@
+---
+# Warning: This file is auto-generated from the Prismic.io CMS. Local changes will overriden on next sync.
+
+title: >
+        <%= @title %>
+
+autore: <%= @autore %>
+date: <%= @date.strftime('%F') %>
+tags: <%= @tags.join(', ') %>
+image: <%= @image %>
+testataForm:
+    prima:  CALCOLA IL TUO PREVENTIVO
+    seconda: Gratuito e senza impegno
+showForm: main
+---
+<p class="abstract"><%= @abstract %></p>
+
+READMORE
+
+<img src="<%= @image %>" class="padding" alt="<%= @title %>" />
+
+<%= @body %>
