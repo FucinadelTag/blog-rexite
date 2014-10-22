@@ -100,8 +100,8 @@ activate :blog do |blog|
 
     blog.tag_template = "tag.html"
     blog.calendar_template = "calendar.html"
-    blog.sources = "/blog/{category}/{year}-{month}-{day}-{title}.html"
-    blog.permalink = "/blog/{category}/{year}-{month}-{day}-{title}.html"
+    blog.sources = "{category}/{year}-{month}-{day}-{title}.html"
+    blog.permalink = "{category}/{year}-{month}-{day}-{title}.html"
 
     # Enable pagination
     blog.paginate = true
@@ -110,7 +110,7 @@ activate :blog do |blog|
 
     blog.custom_collections = {
         category: {
-            link: '/blog/categories/{category}.html',
+            link: '/categories/{category}.html',
             template: '/category.html'
         }
     }
@@ -118,7 +118,6 @@ end
 
 page "/feed.xml", layout: false
 page "pagine/*", :layout => :page
-page "blog/*", :layout => :blog
 
 activate :relative_assets
 set :relative_links, false

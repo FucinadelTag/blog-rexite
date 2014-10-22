@@ -1,10 +1,36 @@
 ---
-title: Welcome to Middleman
+layout: home
+title: Prezzi Defibrillatori Philips
+immagineTestata: http://lh5.googleusercontent.com/-1Kh5qAWGLCU/U00xs0Ic27I/AAAAAAAAlkY/HViPE7Vli-w/w960-h426-no/img_head.jpg
+testoTestata:   <h1>Grazie per averci contattati</h1>
+                <h2>Ti risponderemo appena possibile!</h2>
+
+testataForm:
+    prima:  CALCOLA IL TUO PREVENTIVO
+    seconda: Gratuito e senza impegno
+showForm: main
+metadata:
+    description: Defibrillatori Philips sono incredibilmente semplici ed Intuitivi, Scegli il DAE Semiautomatico più adatto alla Tua Attività. Scrivici ora per Maggiori Informazioni!
+
 ---
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<ul class="large-block-grid-2 medium-block-grid-2">
+<% page_articles.each_with_index do |article, i| %>
+    <li>
+        <article>
+            <% link_to article do %>
+                <%= tag :img, :src => article.metadata[:page]["image"], :title => article.title %>
+            <% end %>
+            <%= partial("header_post", :locals => { :article => article}) %>
+            <%= article.summary %>
+            <%= link_to 'Leggi tutto…', article %>
+        </article>
+    </li>
+<% end %>
+</ul>
+
+<% if paginate %>
+  <% if next_page %>
+    <p><%= link_to 'Next page', next_page %></p>
+  <% end %>
+<% end %>
