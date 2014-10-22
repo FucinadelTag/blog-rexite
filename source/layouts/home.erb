@@ -5,11 +5,9 @@
             <% blog.articles[0...1].each do |article| %>
                 <div class="row">
                     <div class="large-12 hide-for-small">
-                        <div id="featured">
                             <% link_to article do %>
                                 <%= tag :img, :src => article.metadata[:page]["image"], :title => article.title %>
                             <% end %>
-                        </div>
                     </div>
                 </div>
                 <div class="row over">

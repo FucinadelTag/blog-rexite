@@ -117,7 +117,7 @@ activate :blog do |blog|
 end
 
 page "/feed.xml", layout: false
-page "pagine/*", :layout => :page
+page "*", :layout => :blog
 
 activate :relative_assets
 set :relative_links, false

@@ -33,7 +33,8 @@ $baseBlu: #009ee0;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-$row-width: rem-calc(1200);
+$row-width: rem-calc(960);
+$column-gutter: rem-calc(30);
 // $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
@@ -41,7 +42,7 @@ $row-width: rem-calc(1200);
 // $body-bg: #fff;
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-$body-font-family: "Source Sans Pro", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: 'Open Sans', sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
 
