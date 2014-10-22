@@ -117,7 +117,6 @@ activate :blog do |blog|
 end
 
 page "/feed.xml", layout: false
-page "*", :layout => :blog
 
 activate :relative_assets
 set :relative_links, false
@@ -149,7 +148,7 @@ configure :build do
   # Enable cache buster
   # activate :asset_hash
 
-  activate :gzip
+  #activate :gzip
 
   activate :minify_html
 
