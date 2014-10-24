@@ -9,9 +9,6 @@ autore: <%= @autore %>
 date: <%= @date.strftime('%F') %>
 tags: <%= @tags.join(', ') %>
 image: <%= @image %>
-testataForm:
-    prima:  CALCOLA IL TUO PREVENTIVO
-    seconda: Gratuito e senza impegno
 showForm: main
 ---
 <p class="abstract"><%= @abstract %></p>

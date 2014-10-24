@@ -64,8 +64,8 @@
             <!-- Right Nav Section -->
             <ul class="right">
                 <li><%#= link_to 'Defibrillatori Philips', '/' %></li>
-                <li><%= link_to 'Online Store', 'http://eu.rexitestore.com/' %></li>
-                <li><%= link_to 'Corporate', 'http://www.rexite.it/' %></li>
+                <li><%= link_to 'Online Store', 'http://eu.rexitestore.com/', :target => '_blank' %></li>
+                <li><%= link_to 'Corporate', 'http://www.rexite.it/', :target => '_blank' %></li>
             </ul>
         </section>
     </nav>
@@ -79,10 +79,10 @@
         <div class="row">
             <div class="large-8 medium-8 small-8 columns">
                 <i>
-                    Corporate site: <%= link_to 'http://www.rexite.it', 'http://www.rexite.it' %><br />
-                    Ecommerce EU: <%= link_to 'http://eu.rexitestore.com/', 'http://eu.rexitestore.com/' %><br />
-                    Ecommerce US: <%= link_to 'http://us.rexitestore.com/', 'http://us.rexitestore.com/' %><br />
-                    Ecommerce IT: <%= link_to 'http://it.rexitestore.com/', 'http://it.rexitestore.com/' %>
+                    Corporate site: <%= link_to 'http://www.rexite.it', 'http://www.rexite.it', :target => '_blank' %><br />
+                    Ecommerce EU: <%= link_to 'http://eu.rexitestore.com/', 'http://eu.rexitestore.com/', :target => '_blank' %><br />
+                    Ecommerce US: <%= link_to 'http://us.rexitestore.com/', 'http://us.rexitestore.com/', :target => '_blank' %><br />
+                    Ecommerce IT: <%= link_to 'http://it.rexitestore.com/', 'http://it.rexitestore.com/', :target => '_blank' %>
                 </i>
             </div>
 
