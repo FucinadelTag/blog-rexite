@@ -39,7 +39,7 @@ $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
 // We use these to control various global styles
-// $body-bg: #fff;
+$body-bg: scale-color(#fff, $lightness: -5%);
 // $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 $body-font-family: 'Open Sans', sans-serif;
@@ -170,7 +170,7 @@ $subheader-font-weight: 200;
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
 // $hr-border-style: solid;
-// $hr-border-color: #ddd;
+$hr-border-color: #fff;
 // $hr-margin: rem-calc(20);
 
 // We use these to style lists
@@ -1128,7 +1128,7 @@ $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightne
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: #fff;
+$topbar-bg-color: $body-bg;
 $topbar-bg: $topbar-bg-color;
 
 // Height and margin
