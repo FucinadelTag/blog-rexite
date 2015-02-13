@@ -152,6 +152,8 @@ configure :build do
 
   activate :minify_html
 
+  activate :compass
+
   # Use relative URLs
   # activate :relative_assets
 
